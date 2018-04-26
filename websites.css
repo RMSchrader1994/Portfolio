@@ -1,0 +1,16 @@
+
+    body {
+        background: #C0C0C0 !important;
+    }
+
+    i {
+        background: white;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        border: 10px solid black;
+        color: black;
+        font-size: 20px;
+    }
+
+    
