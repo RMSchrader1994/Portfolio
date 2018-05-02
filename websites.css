@@ -1,16 +1,41 @@
+html, body, nav {
+ height: 100%;
+ }
+body {
+    background-image: url("2018-02-23 07.43.42-2.jpg");
+}
 
-    body {
-        background: #C0C0C0 !important;
-    }
+i {
+    background: white;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    border: 10px solid black;
+    color: black;
+    font-size: 20px;
+}
 
-    i {
-        background: white;
-        padding: 10px;
-        width: 90%;
-        text-align: center;
-        border: 10px solid black;
-        color: black;
-        font-size: 20px;
-    }
+i:hover {
+    opacity: .5;
+    background: black;
+    border: 10px solid white;
+    color: white;
+}
+/* CSS used here will be applied after bootstrap.css */
+.navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;}
 
-    
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 139px;
+}
+img {
+    width: 95%;
+    height: 100px;
+    margin: 10px 0; 
+    border-radius: 50%;
+}
+
