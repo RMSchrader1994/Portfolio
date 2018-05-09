@@ -1,3 +1,8 @@
+
+body {
+    background-image: url('../Media/IMG/2018-02-23%2007.43.42-2.jpg');
+}
+
 i {
     background: white;
     padding: 10px;
@@ -14,23 +19,19 @@ i:hover {
     border: 10px solid white;
     color: white;
 }
-body {
-  background-image: url(2018-02-23%2007.43.42-2.jpg);
-  background-size: cover;
-} 
-
-.col-md-5{
-    background: rgba(0,0,0,.5);
-    width: 100%;
-    margin-top: 50px;
-}
-h1 {
-    color: white !important;
+h1, .languages{
+    font-size: 2rem;
     text-align: center;
-}
-h3 {
     color: white !important;
 }
-h3 a {
-    color: white;
+img {
+    width: 45%;
+    height: 125px;
+    margin-top: 10px;
 }
+section {
+    background: rgba(0,0,0,.5);
+    padding: 10px;
+    margin: 15px;
+}
+

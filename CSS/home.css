@@ -6,7 +6,7 @@ body {
     -moz-transition: opacity 2s ease-in;
     -ms-transition: opacity 2s ease-in;
     -o-transition: opacity 2s ease-in;
-    background-image: url("2018-02-23 07.43.42-2.jpg");
+    background-image: url('../Media/IMG/2018-02-23%2007.43.42-2.jpg');
 }
 header h1 {
     font-size: 8rem;
