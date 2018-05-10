@@ -1,5 +1,6 @@
 body {
     background-image: url("../Media/IMG/2018-02-23%2007.43.42-2.jpg");
+    background-size: cover;
 }
 i {
     background: white;
@@ -16,4 +17,22 @@ i:hover {
     background: black;
     border: 10px solid white;
     color: white;
+}
+.row {
+    background: rgba(0,0,0,.8);
+    margin-bottom: 15px;
+    color: white;
+}
+.rect {
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    background: pink;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px 5px;
+}
+p {
+    font-size: 2rem;
 }
