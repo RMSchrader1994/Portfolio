@@ -22,14 +22,14 @@ The site uses both HTML and CSS. The site also uses **Bootstrap** extensively fo
     - Links to each page on the site 
     - Download link for CV.
 - Website Page
-    - Title and languages used for each web site
+    - Title and languages used for each website
     - GitHub and site link for all sites
 - Video Page
-    - Title, image, date, link, description, and descriptive tags for all videos
+    - A title, image, date, link, description, and descriptive tags for all videos
 - Personal Page
     - Sliding, vertical timeline of personal events
 - Skills Page
-    - Three categories of skills seperated by deliberate colors(seen by hovering or clicking buttons)
+    - Three categories of skills separated by deliberate colors(seen by hovering or clicking buttons)
     - Coding skills, one of Code Institute's (where I learned most of my coding skills) colors is orange
     - Video skills, one of Salisbury University's (where I learned most of my video skill) colors in maroon
     - Other skills, my favorite color is green
