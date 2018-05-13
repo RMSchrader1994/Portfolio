@@ -1,6 +1,8 @@
 
 body {
     background-image: url('../Media/IMG/2018-02-23%2007.43.42-2.jpg');
+    vertical-align: middle;
+    text-align: center;
 }
 
 i {
@@ -25,7 +27,7 @@ h1, .languages{
     color: white !important;
 }
 img {
-    width: 45%;
+    width: 50%;
     height: 125px;
     margin-top: 10px;
 }
@@ -34,4 +36,6 @@ section {
     padding: 10px;
     margin: 15px;
 }
-
+h4 {
+    color: white !important;
+}
