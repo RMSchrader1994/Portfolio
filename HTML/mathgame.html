@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: #0d19a3;
+        }
+        .container {
+            margin: 15% auto;
+        }
+        .col-sm-12 button {
+            width: 32.9%;
+            font-size: 3rem;
+            margin: 15px 0px;
+            border: 5px solid #f4e4c1;
+            padding: 15px;
+            background: none;
+            color: #f4e4c1;
+        }
+        .col-sm-12 button:hover {
+            background: #080f5b;
+        }
+        p {
+            text-align: center;
+            font-size: 4rem;
+            background: #080f5b;
+        }
+        #score {
+           color: #15db95; 
+        }
+        #question {
+            color: #e4c580;
+        }
+        form {
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+        }
+        form input {
+            color: black;
+        }
+        @media only screen and (max-width: 800px) {
+            .col-sm-12 button {
+                width: 100%;
+            }
+            form input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+           <button class="button" onclick="setAdditionGame();">Addition Game</button>
+           <button class="button" onclick="setSubtractionGame();">Subtraction Game</button>
+           <button class="button" onclick="setMultiplicationGame();">Multiplication Game</button>
+<!--           <button class="button" onclick="setDivisionGame();">Division Game</button>-->
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <p id="score">Score:</p>
+          </div>
+          <div class="col-sm-6">
+              <p id="question"></p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+              <form id="myForm" name="answerForm" onsubmit="checkAnswer(); return false" data-gametype="addition" action="#">
+                Enter Answer: <input type="number" placeholder= "Answer" name="answer" onclick="this.value=''"/>
+                <input type="hidden" name = "rightAnswer">
+                <input type="submit" value="Submit"/>
+              </form>
+          </div>
+      </div>
+   </div>
+    <script>
+    let score = 0;
+let scorebox = document.getElementById("score");
+let questionbox = document.getElementById("question");
+let answerform = document.getElementById("myForm");
+
+
+function setAdditionGame() {
+    document.getElementById("myForm").setAttribute("data-gametype", "addition");
+    additionQuiz();
+}
+function setSubtractionGame() {
+    document.getElementById("myForm").setAttribute("data-gametype", "subtraction");
+    subtractionQuiz();
+}
+function setMultiplicationGame() {
+    document.getElementById("myForm").setAttribute("data-gametype", "multiplication");
+    multiplicationQuiz();
+}
+//function setDivisionGame() {
+//    document.getElementById("myForm").setAttribute("data-gametype", "division");
+//    divisionQuiz();
+//}
+
+
+
+function additionQuiz() {
+    let num1 = Math.floor(Math.random()*50);
+    let num2 = Math.floor(Math.random()*50);
+    questionbox.textContent = "What is: " + num1 + " + " + num2 + " ?";
+    answerform["rightAnswer"].value = (num1 + num2);
+}
+function subtractionQuiz() {
+    let num1 = Math.floor(Math.random()*50);
+    let num2 = Math.floor(Math.random()*50);
+    questionbox.textContent = "What is: " + num1 + " - " + num2 + " ?";
+    answerform["rightAnswer"].value = (num1 - num2);
+}
+function multiplicationQuiz() {
+    let num1 = Math.floor(Math.random()*50);
+    let num2 = Math.floor(Math.random()*50);
+    questionbox.textContent = "What is: " + num1 + " * " + num2 + " ?";
+    answerform["rightAnswer"].value = (num1 * num2);
+}
+//function divisionQuiz() {
+//    let num1 = Math.floor(Math.random()*10) + 1;
+//    let num2 = Math.floor(Math.random()*10) + 1;
+//    questionbox.textContent = "What is: " + num1 + " / " + num2 + " ?";
+//    answerform["rightAnswer"].value = (num1 / num2);
+//}
+
+function checkAnswer() {
+    let gametype = document.getElementById("myForm").getAttribute("data-gametype");
+    if (answerform["answer"].value == answerform["rightAnswer"].value) {
+        alert("Correct! =)");
+        score++;
+    } else {
+        alert("Incorrect, =(");
+    }
+    scorebox.textContent = score;
+    
+    if (gametype == "addition") {
+        additionQuiz();
+    }
+    if (gametype == "subtraction") {
+        subtractionQuiz();
+    }
+    if (gametype == "multiplication") {
+        multiplicationQuiz();
+    }
+//    if (gametype == "division") {
+//        divisionQuiz();
+//    }
+}
+additionQuiz();
+    </script>
+</body>
+</html>
