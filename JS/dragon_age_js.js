@@ -1,28 +1,30 @@
 
             function selectClass(selection) {
-                var x = document.getElementsByClassName("warrior");
-                var y = document.getElementsByClassName("mage");
-                var z = document.getElementsByClassName("rogue");
+                var w = document.getElementsByClassName("warrior");
+                var m = document.getElementsByClassName("mage");
+                var r = document.getElementsByClassName("rogue");
+                var a = document.getElementsByClassName("mage");
+                var s = document.getElementsByClassName("rogue");
               if (selection.value == 'Warrior') {
                     var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.visibility = "visible";
-                        y[i].style.visibility = "hidden";
-                        z[i].style.visibility = "hidden";
+                    for (i = 0; i < w.length; i++) {
+                        w[i].style.display = "inline-block";
+                        m[i].style.display = "none";
+                        r[i].style.display = "none";
                     }
               } else if (selection.value == 'Mage') {
                     var ii;
-                    for (ii = 0; ii < y.length; ii++) {
-                        x[ii].style.visibility = "hidden";
-                        y[ii].style.visibility = "visible";
-                        z[ii].style.visibility = "hidden";
+                    for (ii = 0; ii < m.length; ii++) {
+                        w[ii].style.display = "none";
+                        m[ii].style.display = "inline-block";
+                        r[ii].style.display = "none";
                     }
               } else if (selection.value == 'Rogue') {
                     var iii;
-                    for (iii = 0; iii < z.length; iii++) {
-                        x[iii].style.visibility = "hidden";
-                        y[iii].style.visibility = "hidden";
-                        z[iii].style.visibility = "visible";
+                    for (iii = 0; iii < r.length; iii++) {
+                        w[iii].style.display = "none";
+                        m[iii].style.display = "none";
+                        r[iii].style.display = "inline-block";
                     }
             }
             }
