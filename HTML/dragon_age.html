@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quizzes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/dragon_age_css.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <style>
+            body {
+            background-color: rgb(215,206,199);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                  <h2>Who is you favorite companion?</h2>
+                </div>
+              </div>
+<!--            Origin-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">Dragon Age: Origin</a>
+                                </h4>
+                            </div>
+                            <div id="collapse0" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <form name="Origin" onsubmit="return false">
+                                        <fieldset>
+                                            <h4>1.) Which class do you prefer?</h4>
+                                            <select name="classes" onchange="selectClass(this);">
+                                                <option>...</option>
+                                                <option class="Warrior" value="Warrior">Warrior</option>
+                                                <option class="Mage" value="Mage">Mage</option>
+                                                <option class="Rogue" value="Rogue">Rogue</option>
+                                            </select>
+                                            <hr>
+                                            <h4>2.) Select a specialization:</h4>
+                                               <div class="warrior">
+                                                   <input type="radio" name="specialization" value="Templar"> Templar
+                                                   <input type="radio" name="specialization" value="Beserker"> Beserker 
+                                                   <input type="radio" name="specialization" value="Reaver"> Reaver <br />
+                                                   <input type="radio" name="specialization" value="Golum"> Golum
+                                                   <input type="radio" name="specialization" value="Dog"> Dog
+                                                   <input type="radio" name="specialization" value="Champion"> Champion    
+                                               </div>
+                                               <div class="rogue">
+                                                   <input type="radio" name="specialization" value="Assassin"> Assassin
+                                                   <input type="radio" name="specialization" value="Bard"> Bard 
+                                               </div>
+                                               <div class="mage">
+                                                   <input type="radio" name="specialization" value="Shape_Shifter"> Shape Shifter
+                                                   <input type="radio" name="specialization" value="Spirit_Healer"> Spirit Healer
+                                               </div>    
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            Awakening-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Dragon Age: Awakening</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <form name="Awakening" onsubmit="return false">
+                                        <fieldset>
+                                            <h4>1.) Which class do you prefer?</h4>
+                                            <select name="classes" onchange="selectClass(this);">
+                                                <option>...</option>
+                                                <option class="Warrior" value="Warrior">Warrior</option>
+                                                <option class="Mage" value="Mage">Mage</option>
+                                                <option class="Rogue" value="Rogue">Rogue</option>
+                                            </select>
+                                            <hr>
+                                            <h4>2.) Select a specialization:</h4>
+                                               <div class="warrior">
+                                                   <input type="radio" name="specialization" value="Templar"> Templar
+                                                   <input type="radio" name="specialization" value="Beserker"> Beserker 
+                                                   <input type="radio" name="specialization" value="Reaver"> Reaver <br />
+                                                   <input type="radio" name="specialization" value="Golum"> Golum
+                                                   <input type="radio" name="specialization" value="Dog"> Dog
+                                                   <input type="radio" name="specialization" value="Champion"> Champion    
+                                               </div>
+                                               <div class="rogue">
+                                                   <input type="radio" name="specialization" value="Assassin"> Assassin
+                                                   <input type="radio" name="specialization" value="Bard"> Bard 
+                                               </div>
+                                               <div class="mage">
+                                                   <input type="radio" name="specialization" value="Shape_Shifter"> Shape Shifter
+                                                   <input type="radio" name="specialization" value="Spirit_Healer"> Spirit Healer
+                                               </div>    
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            II-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Dragon Age II</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form name="II" onsubmit="return false">
+                                    <fieldset>
+                                        
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            Inquisition-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Dragon Age: Inquisition</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form name ="inquisition" onsubmit="return false">
+                                    <fieldset>
+                                        
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script>
+        
+            function selectClass(selection) {
+                var x = document.getElementsByClassName("warrior");
+                var y = document.getElementsByClassName("mage");
+                var z = document.getElementsByClassName("rogue");
+              if (selection.value == 'Warrior') {
+                    var i;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.visibility = "visible";
+                        y[i].style.visibility = "hidden";
+                        z[i].style.visibility = "hidden";
+                    }
+              } else if (selection.value == 'Mage') {
+                    var ii;
+                    for (ii = 0; ii < y.length; ii++) {
+                        x[ii].style.visibility = "hidden";
+                        y[ii].style.visibility = "visible";
+                        z[ii].style.visibility = "hidden";
+                    }
+              } else if (selection.value == 'Rogue') {
+                    var iii;
+                    for (iii = 0; iii < z.length; iii++) {
+                        x[iii].style.visibility = "hidden";
+                        y[iii].style.visibility = "hidden";
+                        z[iii].style.visibility = "visible";
+                    }
+            }
+            }
+        </script>
+    </body>
+</html>
