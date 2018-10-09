@@ -1,0 +1,149 @@
+body {
+background-color: rgb(215,206,199);
+}
+
+.warrior {
+visibility: hidden
+}
+.mage {
+visibility: hidden;
+}
+.rogue {
+visibility: hidden;
+}
+
+.Question1 {
+width: 40%;
+display: inline-block;
+float:left;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/origin_load.jpg);
+background-size:cover;
+color: black;
+text-align: center;
+height: 200px;
+}
+.Question2 {
+width: 40%;
+display: inline-block;
+float: right;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/origin_load.jpg);
+background-size:cover;
+color: black;
+text-align: center;
+height: 200px;
+}
+#origin-heading {
+background-image: url(../Media/IMG/origin_title.jpg);
+background-size:cover;
+height: 100px;
+}
+#collapse0 {
+background: black;
+}
+
+.Question3 {
+width: 40%;
+display: inline-block;
+float:left;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/origin_load.jpg);
+background-size:cover;
+color: black;
+text-align: center;
+height: 200px;
+}
+.Question4 {
+width: 40%;
+display: inline-block;
+float: right;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/origin_load.jpg);
+background-size:cover;
+color: black;
+text-align: center;
+height: 200px;
+}
+#awakening-heading {
+background-image: url(../Media/IMG/awakening_title.jpg);
+background-size:cover;
+height: 100px;
+}
+#collapse1 {
+background: black;
+}
+
+.Question5 {
+width: 40%;
+display: inline-block;
+float:left;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/2_load3.png);
+background-size:cover;
+color: white;
+text-align: center;
+height: 200px;
+border: solid 5px black;
+}
+.Question6 {
+width: 40%;
+display: inline-block;
+float: right;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/2_load2.jpg);
+background-size:cover;
+color: white;
+text-align: center;
+height: 200px;
+border: solid 5px black;    
+}
+#II-heading {
+background-image: url(../Media/IMG/2_title.png);
+color: white;
+background-size:cover;
+height: 100px;
+}
+#collapse2 {
+background-image: url(../Media/IMG/2_load1.jpg);
+}
+
+.Question7 {
+width: 40%;
+display: inline-block;
+float:left;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/inquisition_load1.png);
+background-size:cover;
+color: white;
+text-align: center;
+height: 200px;
+}
+.Question8 {
+width: 40%;
+display: inline-block;
+float: right;
+padding: 15px;
+margin: 0 50px;
+background-image: url(../Media/IMG/inquisition_load2.png);
+background-size:cover;
+color: white;
+text-align: center;
+height: 200px;
+}
+#inquisition-heading {
+background-image: url(../Media/IMG/inquisition_title.jpg);
+background-size:cover;
+height: 100px;
+color: black;
+}
+#collapse3 {
+background: black;
+}

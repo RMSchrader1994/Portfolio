@@ -4,54 +4,10 @@
         <title>Quizzes</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/dragon_age_css.css" type="text/css" />
+        <link rel="stylesheet" href="../CSS/dragon_age_creative_css.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <style>
-            body {
-            background-color: rgb(215,206,199);
-            }
-            .warrior {
-                visibility: hidden
-            }
-            .mage {
-                visibility: hidden;
-            }
-            .rogue {
-                visibility: hidden;
-            }
-            .Question1 {
-                width: 40%;
-                display: inline-block;
-                float:left;
-                padding: 15px;
-                margin: 0 50px;
-                background-image: url(../Media/IMG/origin_load.jpg);
-                background-size:cover;
-                color: black;
-                text-align: center;
-                height: 200px;
-            }
-            .Question2 {
-                width: 40%;
-                display: inline-block;
-                float: right;
-                padding: 15px;
-                margin: 0 50px;
-                background-image: url(../Media/IMG/origin_load.jpg);
-                background-size:cover;
-                color: black;
-                text-align: center;
-                height: 200px;
-            }
-            #origin-heading {
-                background-image: url(../Media/IMG/origin_title.jpg);
-                background-size:cover;
-                height: 100px;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
@@ -122,7 +78,7 @@
                 <div class="col-sm-12">
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" id="awakening-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Dragon Age: Awakening</a>
                                 </h4>
@@ -131,7 +87,7 @@
                                 <div class="panel-body">
                                     <form name="Awakening" onsubmit="return false">
                                         <fieldset>
-                                           <div class="Question1">
+                                           <div class="Question3">
                                             <h4>1.) Which class do you prefer?</h4>
                                             <select name="classes" onchange="selectClass(this);">
                                                 <option>...</option>
@@ -140,7 +96,7 @@
                                                 <option class="Rogue" value="Rogue">Rogue</option>
                                             </select>
                                             </div>
-                                            <div class="Question2">
+                                            <div class="Question4">
                                             <h4>2.) Select a specialization:</h4>
                                                <div class="warrior">
                                                    <input type="radio" name="specialization" value="Shadow_Warrior"> Shadow Warrior
@@ -154,11 +110,11 @@
                                                    <input type="radio" name="specialization" value="Keeper"> Keeper
                                                    <input type="radio" name="specialization" value="Runaway_Spirit_Healer"> Spirit Healer
                                                </div>
+                                            <br />
+                                            <br />
+                                            <input type="submit" value="Submit" onclick="awakeningChar()">
                                             </div>    
                                         </fieldset>
-                                        <br />
-                                        <br />
-                                        <input type="submit" value="Submit" onclick="awakeningChar()">
                                     </form>
                                 </div>
                             </div>
@@ -170,7 +126,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" id="II-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Dragon Age II</a>
                             </h4>
@@ -179,7 +135,7 @@
                             <div class="panel-body">
                                 <form name="II" onsubmit="return false">
                                     <fieldset>
-                                           <div class="Question1">
+                                           <div class="Question5">
                                             <h4>1.) Which class do you prefer?</h4>
                                             <select name="classes" onchange="selectClass(this);">
                                                 <option>...</option>
@@ -188,7 +144,7 @@
                                                 <option class="Rogue" value="Rogue">Rogue</option>
                                             </select>
                                             </div>
-                                            <div class="Question2">
+                                            <div class="Question6">
                                             <h4>2.) Select a specialization:</h4>
                                                <div class="warrior">
                                                    <input type="radio" name="specialization" value="Guardian"> Guardian
@@ -205,11 +161,11 @@
                                                    <input type="radio" name="specialization" value="Force_Mage"> Force Mage
                                                    <input type="radio" name="specialization" value="Dalish_Pariah"> Dalish Pariah
                                                </div>
+                                            <br />
+                                            <br />
+                                            <input type="submit" name="Submit" onclick="IIChar()">
                                             </div>    
                                         </fieldset>
-                                        <br />
-                                        <br />
-                                        <input type="submit" name="Submit" onclick="IIChar()">
                                 </form>
                             </div>
                         </div>
@@ -220,7 +176,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" id="inquisition-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Dragon Age: Inquisition</a>
                             </h4>
@@ -229,7 +185,7 @@
                             <div class="panel-body">
                                 <form name ="inquisition" onsubmit="return false">
                                     <fieldset>
-                                           <div class="Question1">
+                                           <div class="Question7">
                                             <h4>1.) Which class do you prefer?</h4>
                                             <select name="classes" onchange="selectClass(this);">
                                                 <option>...</option>
@@ -238,7 +194,7 @@
                                                 <option class="Rogue" value="Rogue">Rogue</option>
                                             </select>
                                             </div>
-                                            <div class="Question2">
+                                            <div class="Question8">
                                             <h4>2.) Select a specialization:</h4>
                                                <div class="warrior">
                                                    <input type="radio" name="specialization" value="Seeker"> Templar
@@ -255,11 +211,11 @@
                                                    <input type="radio" name="specialization" value="Knight_Enchanter"> Knight Enchanter
                                                    <input type="radio" name="specialization" value="Necromancer"> Necromancer
                                                </div>
+                                               <br />
+                                               <br/>
+                                               <input type="submit" name="Submit" onclick="inquisitionChar()">
                                             </div>  
                                         </fieldset>
-                                        <br />
-                                        <br/>
-                                        <input type="submit" name="Submit" onclick="inquisitionChar()">
                                 </form>
                             </div>
                         </div>

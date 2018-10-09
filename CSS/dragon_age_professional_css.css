@@ -1,0 +1,54 @@
+html body{
+    background-color: #2e1114;
+    color: #adadad;
+}
+
+.warrior {
+visibility: hidden
+}
+.mage {
+visibility: hidden;
+}
+.rogue {
+visibility: hidden;
+}
+
+.Question1 {
+width: 40%;
+display: inline-block;
+float:left;
+padding: 15px;
+margin: 0 50px;
+background: #501b1d;
+color: #83677b;
+text-align: center;
+height: 200px;
+}
+.Question2 {
+width: 40%;
+display: inline-block;
+float: right;
+padding: 15px;
+margin: 0 50px;
+background: #501b1d;
+color: #83677b;
+text-align: center;
+height: 200px;
+}
+
+#collapse0 {
+background: #64485c;
+}
+
+#collapse1 {
+background: #64485c;
+}
+
+#collapse2 {
+background: #64485c;
+}
+
+
+#collapse3 {
+background: #64485c;
+}
