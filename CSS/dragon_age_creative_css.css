@@ -18,7 +18,7 @@ display: inline-block;
 float:left;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/origin_load.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/origin_load.jpg);
 background-size:cover;
 color: black;
 text-align: center;
@@ -30,14 +30,14 @@ display: inline-block;
 float: right;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/origin_load.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/origin_load.jpg);
 background-size:cover;
 color: black;
 text-align: center;
 height: 200px;
 }
 #origin-heading {
-background-image: url(../Media/IMG/origin_title.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/origin_title.jpg);
 background-size:cover;
 height: 100px;
 }
@@ -51,7 +51,7 @@ display: inline-block;
 float:left;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/origin_load.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/origin_load.jpg);
 background-size:cover;
 color: black;
 text-align: center;
@@ -63,14 +63,14 @@ display: inline-block;
 float: right;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/origin_load.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/origin_load.jpg);
 background-size:cover;
 color: black;
 text-align: center;
 height: 200px;
 }
 #awakening-heading {
-background-image: url(../Media/IMG/awakening_title.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/awakening_title.jpg);
 background-size:cover;
 height: 100px;
 }
@@ -84,7 +84,7 @@ display: inline-block;
 float:left;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/2_load3.png);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/2_load3.png);
 background-size:cover;
 color: white;
 text-align: center;
@@ -97,7 +97,7 @@ display: inline-block;
 float: right;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/2_load2.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/2_load2.jpg);
 background-size:cover;
 color: white;
 text-align: center;
@@ -105,13 +105,13 @@ height: 200px;
 border: solid 5px black;    
 }
 #II-heading {
-background-image: url(../Media/IMG/2_title.png);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/2_title.png);
 color: white;
 background-size:cover;
 height: 100px;
 }
 #collapse2 {
-background-image: url(../Media/IMG/2_load1.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/2_load1.jpg);
 }
 
 .Question7 {
@@ -120,7 +120,7 @@ display: inline-block;
 float:left;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/inquisition_load1.png);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/inquisition_load1.png);
 background-size:cover;
 color: white;
 text-align: center;
@@ -132,14 +132,14 @@ display: inline-block;
 float: right;
 padding: 15px;
 margin: 0 50px;
-background-image: url(../Media/IMG/inquisition_load2.png);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/inquisition_load2.png);
 background-size:cover;
 color: white;
 text-align: center;
 height: 200px;
 }
 #inquisition-heading {
-background-image: url(../Media/IMG/inquisition_title.jpg);
+background-image: url(../Media/IMG/Dragon%20Age%20Stuff/inquisition_title.jpg);
 background-size:cover;
 height: 100px;
 color: black;
